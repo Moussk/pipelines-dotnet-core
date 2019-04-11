@@ -17,7 +17,7 @@ namespace pipelines_dotnet_core.Controllers
 
         public IActionResult Privacy()
         {
-            return View();
+            return View(); 'test
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
