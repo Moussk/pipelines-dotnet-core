@@ -46,6 +46,9 @@ steps:
     arguments: '--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)'
     zipAfterPublish: True
     
+    
+ - script: dotnet pack /p:PackageVersion=$(version)  # define version variable elsewhere in your pipeline
+    - task: NuGetCommand@2
   inputs:
     command: push
     nuGetFeedType: external
