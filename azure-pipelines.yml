@@ -53,5 +53,4 @@ steps:
     versioningScheme: byEnvVar
     versionEnvVar: version
     
-    - script: dotnet pack /p:PackageVersion=$(version)  # define version variable elsewhere in your pipeline
     
